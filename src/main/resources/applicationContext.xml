@@ -7,9 +7,13 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="testBean"
-          class="uz.kamron.springcource.TestBean">
-        <constructor-arg value="Neil"/>
+    <bean id="musicBean"
+          class="uz.kamron.springcource.RockMusic">
+    </bean>
+
+    <bean id="musicPlayer"
+    class="uz.kamron.springcource.MusicPlayer">
+        <constructor-arg ref="musicBean"/>
     </bean>
 
 </beans>
