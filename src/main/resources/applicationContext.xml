@@ -14,7 +14,9 @@
     </bean>
 
     <bean id="musicPlayer"
-    class="uz.kamron.springcource.MusicPlayer">
+    class="uz.kamron.springcource.MusicPlayer"
+    scope="prototype">
+
         <property name="music" ref="musicBean"/>
 
         <property name="name" value="${musicPlayer.name}"/>
